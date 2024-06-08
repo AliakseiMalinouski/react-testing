@@ -1,11 +1,14 @@
 const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
+        publicPath: '',
         path: path.resolve(__dirname, './dist'),
     },
+    mode: 'development',
     module: {
         rules: [
             {
@@ -22,7 +25,13 @@ const config = {
     },
     resolve: {
         extensions: ['.js', '.jsx']
-    }
+    },
+    plugins: [
+        new HTMLWebpackPlugin({
+            file: 'index.html',
+            title: 'React testing',
+        }),
+    ]
 }
 
 module.exports = config;
