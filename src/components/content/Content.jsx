@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Input } from "../input/Input";
+import { Form } from "../form/Form";
 
 const Content = () => {
 
@@ -18,6 +19,7 @@ const Content = () => {
                 onChange={handleChange}
                 placeholder={'input placholder'}
             />
+            <Form/>
         </div>
     )
 }
