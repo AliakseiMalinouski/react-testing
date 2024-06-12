@@ -6,7 +6,7 @@ const Cover = ({ title, text, items }) => {
             <h1>{title}</h1>
             <p>{text}</p>
             {items.map((item) => (
-                <div>
+                <div key={item}>
                     {item}
                 </div>
             ))}
