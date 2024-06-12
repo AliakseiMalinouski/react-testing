@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cover tests Cover render test 1`] = `
+<div>
+  <div>
+    <h1>
+      some title
+    </h1>
+    <p>
+      some text
+    </p>
+    <div>
+      item1
+    </div>
+    <div>
+      item2
+    </div>
+    <div>
+      item3
+    </div>
+  </div>
+</div>
+`;
