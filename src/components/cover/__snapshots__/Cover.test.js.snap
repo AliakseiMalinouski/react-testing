@@ -9,14 +9,39 @@ exports[`Cover tests Cover render test 1`] = `
     <p>
       some text
     </p>
-    <div>
-      item1
-    </div>
-    <div>
-      item2
-    </div>
-    <div>
-      item3
+    <div
+      data-testid="items-test-id"
+    >
+      <div
+        data-testid="item-test-id-1"
+      >
+        <h3>
+          item1
+        </h3>
+        <input
+          type="checkbox"
+        />
+      </div>
+      <div
+        data-testid="item-test-id-2"
+      >
+        <h3>
+          item2
+        </h3>
+        <input
+          type="checkbox"
+        />
+      </div>
+      <div
+        data-testid="item-test-id-3"
+      >
+        <h3>
+          item3
+        </h3>
+        <input
+          type="checkbox"
+        />
+      </div>
     </div>
   </div>
 </div>
