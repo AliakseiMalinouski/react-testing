@@ -56,4 +56,9 @@ describe('Cover tests', () => {
         const randomItem = getByTestId(randomItemId);
         fireEvent.click(randomItem);
     });
+
+    test('onClick test trigger', () => {
+        const onClickTrigger = jest.fn();
+        const { container } = render(<Cover text={text} title={title} items={items} onClick={onClickTrigger}/>);
+    });
 });
