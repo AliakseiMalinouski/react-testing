@@ -61,4 +61,17 @@ describe('Cover tests', () => {
         const onClickTrigger = jest.fn();
         const { container } = render(<Cover text={text} title={title} items={items} onClick={onClickTrigger}/>);
     });
+
+    test('item button test', () => {
+        const onClickTrigger = jest.fn();
+        const { container, getByRole } = render(<Cover text={text} title={title} items={items} onClick={onClickTrigger}/>);
+        expect(getByRole('button', { type: 'button' })).toBeTruthy();
+    });
+
+    test('input value test', () => {
+        const onClickTrigger = jest.fn();
+        const inputValue = 'input value';
+        const { container, getByRole, getByTestId } = render(<Cover text={text} title={title} items={items} inputValue={inputValue} onClick={onClickTrigger}/>);
+        expect(getByTestId("input-with-prop-value").value).toBe(inputValue);
+    });
 });

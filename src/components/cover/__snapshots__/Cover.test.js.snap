@@ -21,9 +21,6 @@ exports[`Cover tests Cover render test 1`] = `
         <input
           type="checkbox"
         />
-        <button
-          type="button"
-        />
       </div>
       <div
         data-testid="item-test-id-2"
@@ -33,9 +30,6 @@ exports[`Cover tests Cover render test 1`] = `
         </h3>
         <input
           type="checkbox"
-        />
-        <button
-          type="button"
         />
       </div>
       <div
@@ -47,10 +41,16 @@ exports[`Cover tests Cover render test 1`] = `
         <input
           type="checkbox"
         />
-        <button
-          type="button"
-        />
       </div>
+      <button
+        name="button-item"
+        type="button"
+      />
+      <input
+        data-testid="input-with-prop-value"
+        type="text"
+        value=""
+      />
     </div>
   </div>
 </div>

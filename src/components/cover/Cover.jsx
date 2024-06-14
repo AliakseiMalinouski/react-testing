@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Cover = ({ title, text, items, onClick }) => {
+const Cover = ({ title, text, items, onClick, inputValue }) => {
     const [data, setData] = useState(items);
     const handleClick = (id) => {
         const preparedData = data.map((item) => {
@@ -21,9 +21,10 @@ const Cover = ({ title, text, items, onClick }) => {
                 <div key={id} onClick={() => handleClick(id)} data-testid={`item-test-id-${id}`}>
                     <h3>{title}</h3>
                     <input type='checkbox' checked={checked} onChange={() => {}}/>
-                    <button type="button" onClick={onClick}></button>
                 </div>
             ))}
+            <button type="button" name='button-item' onClick={onClick}></button>
+            <input type="text" data-testid="input-with-prop-value" value={inputValue}/>
             </div>
         </div>
     )
